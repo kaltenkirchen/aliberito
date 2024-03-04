@@ -1,0 +1,117 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url("dfg.jpg");
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+
+
+@keyframes slideDown {
+        0% {
+            opacity: 0;
+            transform: translateY(300%);
+               visibility: hidden;  
+  }
+        100% {
+            opacity: 1;
+        }
+    }
+.emo {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+        width: 85%;
+        height: 100vh;
+  font-weight: 600;
+}
+.text1 {
+ display: flex;
+   flex-direction:row;
+        position: sticky;
+        animation: slideDown 5s forwards;
+  font-size: 1.6em;
+    }
+    
+  .text2 {
+    display: flex;
+   flex-direction: row;
+        position: sticky;
+        animation: slideDown 5s forwards;
+    opacity: 0;
+    font-size: 1.6em;
+    }
+     
+
+ .text3 {
+   display: flex;
+   flex-direction: row;
+  margin-top: 170px;
+        position: absolute;
+        animation: slideDown 5s forwards;
+   opacity: 0;
+   font-size: 1.6em;
+    }
+      
+
+ .text4 {
+   display: flex;
+   flex-direction: column;
+        position:absolute;
+        animation: slideDown 7s forwards;
+   opacity: 0;
+   margin-top: 320px;
+  
+    }
+  
+
+
+.container{
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+.bubbles {
+  position: relative;
+display: flex;
+}
+.bubbles span
+{
+position: relative;
+width: 13px;
+height: 15px;
+background: rgba(207, 209, 229, 0.26);
+  margin: 0 4px;
+  border-radius: 50%;
+
+animation: animate 15s linear infinite;
+animation-duration: calc(125s / var(--i));
+
+}
+
+ @keyframes animate
+{
+  0%
+  {
+    
+transform: translateY(100vh) scale(0);
+  }
+
+100%
+  {
+transform: translateY(-10vh) scale(1);
+}
+}
+.nm {
+  display: inline-block;
+  margin-right: 30px;
+}
+.io {
+  display: inline-block;
+  width: 380px;
+  text-align: start;
+  font-size: 1em;
+  outline: 2px solid white;
+  padding: 10px;
+  
+}
